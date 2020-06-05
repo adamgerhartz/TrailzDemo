@@ -38,6 +38,12 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             trailNameLbl.font = UIFont(name: "Courier New", size: 25)
             scrollView.addSubview(trailNameLbl)
             
+            //now you need a tap gesture recognizer
+            //note that target and action point to what happens when the action is recognized.
+            let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+            imageView.addGestureRecognizer(tap)
+            imageView.isUserInteractionEnabled = true
+            //Add the recognizer to your view.
         }
         
         sectionHeaderLbl.frame = CGRect(x: 8, y: (view.frame.height / 7), width: 300, height: 100)
@@ -53,7 +59,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         pageControl.currentPage = Int(scrollView.contentOffset.x / CGFloat(414))
     }
-
+    
+    @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
+        // handling code
+        print("Image Tapped successfully")
+    }
 
 }
 
