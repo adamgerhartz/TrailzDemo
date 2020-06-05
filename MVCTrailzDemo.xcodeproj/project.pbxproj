@@ -13,6 +13,8 @@
 		905A47B42487F80300AF2D0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905A47B22487F80300AF2D0E /* Main.storyboard */; };
 		905A47B62487F80500AF2D0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905A47B52487F80500AF2D0E /* Assets.xcassets */; };
 		905A47B92487F80500AF2D0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905A47B72487F80500AF2D0E /* LaunchScreen.storyboard */; };
+		90FDF0BC2489EB5300264C30 /* TrailDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FDF0BB2489EB5300264C30 /* TrailDescriptionViewController.swift */; };
+		90FDF0C2248A06C400264C30 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FDF0C1248A06C400264C30 /* MainNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		905A47B52487F80500AF2D0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		905A47B82487F80500AF2D0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		905A47BA2487F80500AF2D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90FDF0BB2489EB5300264C30 /* TrailDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailDescriptionViewController.swift; sourceTree = "<group>"; };
+		90FDF0C1248A06C400264C30 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				905A47AC2487F80300AF2D0E /* AppDelegate.swift */,
 				905A47AE2487F80300AF2D0E /* SceneDelegate.swift */,
 				905A47B02487F80300AF2D0E /* ViewController.swift */,
+				90FDF0BB2489EB5300264C30 /* TrailDescriptionViewController.swift */,
 				905A47B22487F80300AF2D0E /* Main.storyboard */,
 				905A47B52487F80500AF2D0E /* Assets.xcassets */,
 				905A47B72487F80500AF2D0E /* LaunchScreen.storyboard */,
 				905A47BA2487F80500AF2D0E /* Info.plist */,
+				90FDF0C1248A06C400264C30 /* MainNavigationController.swift */,
 			);
 			path = MVCTrailzDemo;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90FDF0C2248A06C400264C30 /* MainNavigationController.swift in Sources */,
 				905A47B12487F80300AF2D0E /* ViewController.swift in Sources */,
 				905A47AD2487F80300AF2D0E /* AppDelegate.swift in Sources */,
+				90FDF0BC2489EB5300264C30 /* TrailDescriptionViewController.swift in Sources */,
 				905A47AF2487F80300AF2D0E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

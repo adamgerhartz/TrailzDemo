@@ -63,6 +63,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
         // handling code
         print("Image Tapped successfully")
+        let newView = self.storyboard?.instantiateViewController(withIdentifier: "trailD") as! TrailDescriptionViewController
+        self.navigationController?.pushViewController(newView, animated: true)
     }
 
 }
